@@ -24,3 +24,35 @@ h1 {
   color: #c09;
   border-color: #c09;
 }
+
+.cone {
+  top: 12.5em;
+  right: 1em;
+}
+
+.mint {
+  top: 7em;
+  right: 1em;
+}
+
+.choc {
+  top: 3em;
+  right: .75em;
+  z-index: 3;
+}
+
+.fudge {
+  top: -1.75em;
+  right: 1em;
+  z-index: 4;
+}
+
+.cherry {
+  top: -5.5em;
+  right: 1em;
+  z-index: 5;
+}
+
+img {
+  max-width: 180px;
+}
