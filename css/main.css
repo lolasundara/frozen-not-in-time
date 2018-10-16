@@ -9,7 +9,15 @@ html {
 
 h1 {
   color: #990073;
-  transform: rotate(-15deg);
+  transform: rotate(-10deg);
+  text-shadow: 1px 1px 1px;
+}
+
+p {
+  color: #c09;
+  max-width: 19em;
+  transform: rotate(-5deg);
+  text-shadow: 1px 1px 1px;
 }
 
 .btn-ghost {
