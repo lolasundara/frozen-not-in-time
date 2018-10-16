@@ -2,9 +2,6 @@ html {
   font-family: "Fredoka One", sans-serif;
   color: #c09;
   background: #d4fdff;
-}
-
-body {
   background-image: repeating-linear-gradient(-45deg, #d4fdff, #d4fdff 10px, #c9fcff 10px, #c9fcff 20px);
   border-top: 8px solid #b3fbff;
   border-bottom: 8px solid #b3fbff;
@@ -12,6 +9,7 @@ body {
 
 h1 {
   color: #990073;
+  transform: rotate(-15deg);
 }
 
 .btn-ghost {
@@ -20,39 +18,83 @@ h1 {
 }
 
 .btn-ghost:hover {
-  background-color: #c09 20%;
   color: #c09;
   border-color: #c09;
 }
 
 .cone {
-  top: 12.5em;
-  right: 1em;
+  top: 12.65em;
+  right: .75em;
+  animation: cone .2s linear forwards;
+}
+
+@keyframes cone {
+
+  0% {
+    transform: translateX(0);
+    transform: translateY(-500px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
 }
 
 .mint {
   top: 7em;
-  right: 1em;
+  right: .75em;
+  animation: cone .3s linear forwards;
 }
 
 .choc {
-  top: 3em;
-  right: .75em;
+  top: 2.5em;
+  right: .25em;
   z-index: 3;
+  animation: cone .4s linear forwards;
 }
 
 .fudge {
-  top: -1.75em;
+  top: -1.25em;
   right: 1em;
   z-index: 4;
+  animation: cone .5s linear forwards;
 }
 
 .cherry {
-  top: -5.5em;
-  right: 1em;
+  top: -5.3em;
+  right: .75em;
   z-index: 5;
+  animation: cone .6s linear forwards;
 }
 
 img {
   max-width: 180px;
+}
+
+.text {
+  animation: text 150ms linear;
+  padding-bottom: 150px;
+  transform-origin: left center;
+}
+
+@keyframes text {
+
+  0% {
+    filter: opacity(0);
+  }
+
+  50% {
+    filter: opacity(.1);
+  }
+
+  75% {
+    filter: opacity(.5);
+    filter: blur(.5px);
+  }
+
+  100% {
+    filter: opacity(1);
+  }
+
 }
