@@ -83,7 +83,7 @@ img {
 
 .text {
   animation: text 150ms linear;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
   transform-origin: left center;
 }
 
